@@ -22,7 +22,7 @@ public class Main {
         ArrayList<String>rres = getKPC(ros);
         
         ArrayList<String>mres = new ArrayList<>();
-        String code = codes[ch - '0'];
+        String code = codes[ch - '0']; //ascii value of zero is 48.
         for(int i=0;i<code.length();i++){
             char ah = code.charAt(i);
             for(String rstr : rres){
