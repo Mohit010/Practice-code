@@ -6,7 +6,7 @@ class Solution {
             if (nums[mid] >= target)
                 r = mid;
             else
-                l = mid + 1;  
+                l = mid + 1; //commit
         }
 
         if (nums[l] != target) return -1;
