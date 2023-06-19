@@ -1,6 +1,6 @@
 class SmallestIntfinteSet{
     HashSet<Integer>hs;
-    int curr;
+    int curr;//
 
     public SmallestIntfinteSet(){
         hs = new HashSet<>();
