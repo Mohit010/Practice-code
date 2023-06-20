@@ -10,7 +10,7 @@ public class Main {
         int c = scn.nextInt();
         int chess[][] = new int[n][n];
         
-        printKnightsTour(chess,r,c,1);
+        printKnightsTour(chess,r,c,1);//Knights
     }
 
     public static void printKnightsTour(int[][] chess, int r, int c, int move) {
