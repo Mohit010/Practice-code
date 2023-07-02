@@ -7,23 +7,28 @@ public class Main{
 
         while(t-- > 0){
             int n = scn.nextInt();
-            int arr[] = new int[n];
+            int m = scn.nextInt();
+
+            long ts_sum = 0;
+            int ts[] = new int[n];
             for(int i=0;i<n;i++){
-                arr[i] = scn.nextInt();
+                ts[i] = scn.nextInt();
+                ts_sum += ts[i];
             }
 
-            Arrays.sort(arr);
-            int i = 0;
-            int j = n-1;
-            int ans = 0;
-
-            while(i < j){
-                int diff = arr[j] - arr[i];
-                ans += diff;
-                i++;
-                j--;
+            long te_sum = 0;
+            int te[] = new int[m];
+            for(int i=0;i<m;i++){
+                te[i] = scn.nextInt();
+                te_sum += te[i];
             }
-            System.out.println(ans);
+            if(ts_sum > te_sum){
+                System.out.println("Tsondu");
+            }else if(te_sum > ts_sum){
+                System.out.println("Tenzing");
+            }else{
+                System.out.println("Draw");
+            }
         }
     }
 }
