@@ -12,7 +12,9 @@ public class Main{
             }else{
                 map.put(ch,1);
             }
+
         }
+        //commit...
         // char chh[] = s.toCharArray();
         // for(char ch : chh){
         //     if(map.containsKey(ch)){
